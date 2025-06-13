@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campo e Cidade - Contrastes e Harmonia</title>
+    <style>
+        /* Estilos Gerais */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        /* Cabeçalho */
+        header {
+            background: linear-gradient(to right, #4CAF50, #8BC34A);
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+        
+        header p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        /* Navegação */
+        nav {
+            background-color: #333;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+        }
+        
+        nav li {
+            padding: 1rem 2rem;
+        }
+        
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        
+        nav a:hover {
+            color: #8BC34A;
+        }
+        
+        /* Conteúdo Principal */
+        main {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 2rem;
+        }
+        
+        section {
+            margin-bottom: 3rem;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+        
+        .section-header {
+            background: linear-gradient(to right, #2196F3, #03A9F4);
+            color: white;
+            padding: 1rem 2rem;
+        }
+        
+        .section-content {
+            padding: 2rem;
+        }
+        
+        .comparison {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .comparison-item {
+            flex: 1;
+            min-width: 300px;
+            background-color: #f9f9f9;
+            padding: 1.5rem;
+            border-radius: 6px;
+            box-shadow: 0 1px 5px rgba(0, 0, 0, 0.05);
+        }
+        
+        .comparison-item h3 {
+            color: #4CAF50;
+            margin-bottom: 1rem;
+            border-bottom: 2px solid #4CAF50;
+            padding-bottom: 0.5rem;
+        }
+        
+        /* Galeria */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+        
+        .gallery-item {
+            height: 200px;
+            overflow: hidden;
+            border-radius: 6px;
+            position: relative;
+        }
+        
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s;
+        }
+        
+        .gallery-item:hover img {
+            transform: scale(1.05);
+        }
+        
+        .gallery-caption {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 0.5rem;
+            transform: translateY(100%);
+            transition: transform 0.3s;
+        }
+        
+        .gallery-item:hover .gallery-caption {
+            transform: translateY(0);
+        }
+        
+        /* Rodapé */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 3rem;
+        }
+        
+        /* Responsividade */
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .comparison {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Campo e Cidade</h1>
+        <p>Explorando os contrastes e a harmonia entre dois modos de vida</p>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#comparacao">Comparação</a></li>
+            <li><a href="#galeria">Galeria</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+        <section id="sobre">
+            <div class="section-header">
+                <h2>Sobre o Tema</h2>
+            </div>
+            <div class="section-content">
+                <p>A relação entre campo e cidade representa um dos contrastes mais marcantes da vida moderna. Enquanto as cidades são centros de agitação, tecnologia e diversidade cultural, o campo oferece tranquilidade, contato com a natureza e um ritmo de vida mais lento.</p>
+                
+                <p>Este site explora as diferenças e semelhanças entre esses dois ambientes, destacando como ambos são essenciais para o equilíbrio da sociedade e do meio ambiente.</p>
+                
+                <div class="comparison">
+                    <div class="comparison-item">
+                        <h3>Campo</h3>
+                        <p>O campo é caracterizado por vastas áreas verdes, produção agrícola e pecuária, ar puro e um estilo de vida mais conectado com os ciclos naturais.</p>
+                    </div>
+                    <div class="comparison-item">
+                        <h3>Cidade</h3>
+                        <p>As cidades são centros urbanos com alta densidade populacional, infraestrutura complexa, diversidade cultural e oportunidades de trabalho e educação.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="comparacao">
+            <div class="section-header">
+                <h2>Comparação Detalhada</h2>
+            </div>
+            <div class="section-content">
+                <p>Vamos analisar alguns aspectos importantes que diferenciam e aproximam a vida no campo e na cidade:</p>
+                
+                <div class="comparison">
+                    <div class="comparison-item">
+                        <h3>Qualidade de Vida</h3>
+                        <p><strong>Campo:</strong> Ar puro, menos estresse, contato com a natureza, mas com menos acesso a serviços especializados.</p>
+                        <p><strong>Cidade:</strong> Acesso a saúde, educação e entretenimento, mas com mais poluição, barulho e estresse.</p>
+                    </div>
+                    <div class="comparison-item">
+                        <h3>Economia</h3>
+                        <p><strong>Campo:</strong> Baseada na agricultura, pecuária e extrativismo, com trabalho muitas vezes sazonal.</p>
+                        <p><strong>Cidade:</strong> Economia diversificada com indústria, comércio e serviços, oferecendo mais variedade de empregos.</p>
+                    </div>
+                    <div class="comparison-item">
+                        <h3>Cultura</h3>
+                        <p><strong>Campo:</strong> Tradições mais preservadas, festas típicas e costumes arraigados.</p>
+                        <p><strong>Cidade:</strong> Diversidade cultural, influências globais e constante renovação de tendências.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="galeria">
+            <div class="section-header">
+                <h2>Galeria de Imagens</h2>
+            </div>
+            <div class="section-content">
+                <div class="gallery">
+                    <div class="gallery-item">
+                        <img src="https://source.unsplash.com/random/600x400/?countryside" alt="Paisagem rural">
+                        <div class="gallery-caption">Paisagem campestre</div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://source.unsplash.com/random/600x400/?city" alt="Cidade movimentada">
+                        <div class="gallery-caption">Centro urbano</div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://source.unsplash.com/random/600x400/?farm" alt="Fazenda">
+                        <div class="gallery-caption">Vida agrícola</div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://source.unsplash.com/random/600x400/?skyscraper" alt="Arranha-céus">
+                        <div class="gallery-caption">Edifícios urbanos</div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://source.unsplash.com/random/600x400/?village" alt="Vila rural">
+                        <div class="gallery-caption">Comunidade rural</div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://source.unsplash.com/random/600x400/?metropolis" alt="Metrópole">
+                        <div class="gallery-caption">Grande metrópole</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="contato">
+            <div class="section-header">
+                <h2>Entre em Contato</h2>
+            </div>
+            <div class="section-content">
+                <p>Tem alguma experiência interessante sobre vida no campo ou na cidade para compartilhar? Envie-nos uma mensagem!</p>
+                
+                <form id="contact-form" style="margin-top: 2rem;">
+                    <div style="margin-bottom: 1rem;">
+                        <label for="name" style="display: block; margin-bottom: 0.5rem;">Nome:</label>
+                        <input type="text" id="name" name="name" required style="width: 100%; padding: 0.5rem; border: 1px solid #ddd; border-radius: 4px;">
+                    </div>
+                    
+                    <div style="margin-bottom: 1rem;">
+                        <label for="email" style="display: block; margin-bottom: 0.5rem;">Email:</label>
+                        <input type="email" id="email" name="email" required style="width: 100%; padding: 0.5rem; border: 1px solid #ddd; border-radius: 4px;">
+                    </div>
+                    
+                    <div style="margin-bottom: 1rem;">
+                        <label for="message" style="display: block; margin-bottom: 0.5rem;">Mensagem:</label>
+                        <textarea id="message" name="message" rows="5" required style="width: 100%; padding: 0.5rem; border: 1px solid #ddd; border-radius: 4px;"></textarea>
+                    </div>
+                    
+                    <button type="submit" style="background-color: #4CAF50; color: white; border: none; padding: 0.8rem 1.5rem; border-radius: 4px; cursor: pointer; font-weight: bold;">Enviar Mensagem</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2023 Campo e Cidade - Todos os direitos reservados</p>
+        <p style="margin-top: 1rem;">Site desenvolvido para fins educacionais</p>
+    </footer>
+    
+    <script>
+        // Form submission handler
+        document.getElementById('contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Get form values
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+            
+            // Here you would typically send the data to a server
+            // For this example, we'll just show an alert
+            alert(`Obrigado, ${name}! Sua mensagem foi recebida. Entraremos em contato em breve.`);
+            
+            // Reset the form
+            this.reset();
+        });
+        
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                window.scrollTo({
+                    top: targetElement.offsetTop - 60,
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
